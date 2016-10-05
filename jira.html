@@ -11,17 +11,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 </p>
  <button id='myButton'>Click to Slide or Toggle</button>
 <script>
-var url="/v/validate.php?mode="+mode;
-url=url+"&check="+value;
-
-if (mode == 'check_password2') {
-url=url+"&against="+document.getElementById('pass1').value;
-}
-
-url=url+"&sid="+Math.random();
-httpxml.onreadystatechange=stateck;
-httpxml.open("GET",url,true);
-httpxml.send(null);
 $("#myButton").click(function () {
 alert('huy');
     $("p").slideToggle("slow");
